@@ -1,11 +1,3 @@
-# write pull hook
-cat > .git/hooks/post-merge <<eof
-# renew folder
-{ rm -r hello/ ; } 2>/dev/null
-{ 7z x hello.7z -pjamal; } 2>/dev/null
-eof
-
-
 # write precommit hook
 cat > .git/hooks/pre-commit <<eof
 # remove old 7z file
