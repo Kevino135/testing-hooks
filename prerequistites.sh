@@ -12,12 +12,8 @@ cat > .git/hooks/pre-commit <<eof
 # archive folder
 { 7z a "hello.7z" hello/ -pjamal; } 2>/dev/null
 
-# remove folder
-{ rm -r hello/ ; } 2>/dev/null
-
 # git add
 { git add . ; } 2>/dev/null
-
 eof
 
 # make executeable
