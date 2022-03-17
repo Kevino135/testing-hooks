@@ -29,3 +29,9 @@ cat > .git/hooks/post-commit <<eof
 { 7z x hello.7z -pjamal; } 2>/dev/null
 
 eof
+
+
+# make executeable
+chmod +x .git/hooks/post-merge
+chmod +x .git/hooks/pre-commit
+chmod +x .git/hooks/post-commit
