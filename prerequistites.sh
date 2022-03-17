@@ -24,6 +24,5 @@ eof
 
 
 # make executeable
-chmod +x .git/hooks/post-merge
 chmod +x .git/hooks/pre-commit
 chmod +x .git/hooks/post-commit
