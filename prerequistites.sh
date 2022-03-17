@@ -2,7 +2,7 @@
 cat > .git/hooks/post-merge <<eof
 { rm -r hello/ ; } 2>/dev/null
 { 7x x hello.7z -pjamal ; } 2>/dev/null
-
+eof
 
 # write precommit hook
 cat > .git/hooks/pre-commit <<eof
@@ -30,5 +30,6 @@ eof
 
 
 # make executeable
+chmod +X .git/hooks/post-merge
 chmod +x .git/hooks/pre-commit
 chmod +x .git/hooks/post-commit
