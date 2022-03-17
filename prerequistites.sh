@@ -1,3 +1,9 @@
+# write postmerge hook
+cat > .git/hooks/post-merge <<eof
+{ rm -r hello/ ; } 2>/dev/null
+{ 7x x hello.7z -pjamal ; } 2>/dev/null
+
+
 # write precommit hook
 cat > .git/hooks/pre-commit <<eof
 # remove old 7z file
