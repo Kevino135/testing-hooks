@@ -16,6 +16,12 @@ cat > .git/hooks/pre-commit <<eof
 { git add . ; } 2>/dev/null
 eof
 
+# write postcommit hook
+cat > .git/hooks/post-commit <<eof
+{ git commit -m "new commit" ; } 2>/dev/null
+eof
+
 # make executeable
 chmod +x .git/hooks/post-merge
 chmod +x .git/hooks/pre-commit
+chmod +x .git/hooks/post-commit
