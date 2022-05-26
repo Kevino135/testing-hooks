@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-  gAAAAABij7NNYVCTrU3fvCar-cBZegjkfrhijQDekBwapH6j_yPoUR92bWIQrJHGmxjKi05y3n7Tnq_LMl_ugJhpez9RXRO6rdKKp-WhgvoLUzQQXCjPg8uAWW79MkF2bXLPTn8bekWzXPUZ9jOLul8-1buApLiFPI2wuSVFkfYw_DKDWUge-Jw=
-  db.SetMaxOpenConns(10)
+  gAAAAABij7XQ15C1jWTkHDNH8_nvain8n4xK6bgFwQYce4nnwvf6mycvW8OrPo7BE39PIb1OTE7hUE85fUnOzUJZUyIb0_zaQDP6Vs7vOoEDdZ3GPu4XjlIRSgizJfDw4RlRm2nany8ptakwJBJwpgq4dgUZ6oMuSKeJcGZkawmSDrwbmLZhNxQ=
+  db.SetMaxOpenConns(15)
   db.SetMaxIdleConns(5)
   //Connection database query
   for i := 0; i < 100; i++ {
